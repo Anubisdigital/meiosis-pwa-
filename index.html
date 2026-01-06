@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meiosis Explained</title>
+  
+  <!-- Link to Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Favicon / icons -->
+  <link rel="icon" href="icon-192.png">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #4CAF50;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+    .diagram {
+      display: block;
+      margin: 1rem auto;
+      max-width: 100%;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meiosis Explained</h1>
+  </header>
+  
+  <main>
+    <section>
+      <h2>What is Meiosis?</h2>
+      <p>Meiosis is a type of cell division that reduces the chromosome number by half, producing four genetically distinct daughter cells, each with half the number of chromosomes of the parent cell. It is essential for sexual reproduction.</p>
+    </section>
+
+    <section>
+      <h2>Phases of Meiosis</h2>
+      <ul>
+        <li><strong>Prophase I:</strong> Homologous chromosomes pair up and exchange segments (crossing over).</li>
+        <li><strong>Metaphase I:</strong> Paired chromosomes align in the center of the cell.</li>
+        <li><strong>Anaphase I:</strong> Homologous chromosomes separate to opposite poles.</li>
+        <li><strong>Telophase I & Cytokinesis:</strong> Two cells are formed, each with half the chromosome number.</li>
+        <li><strong>Meiosis II:</strong> Similar to mitosis; sister chromatids separate to produce 4 haploid cells.</li>
+      </ul>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Meiosis_diagram.svg" alt="Meiosis Diagram" class="diagram">
+    </section>
+
+    <section>
+      <h2>Why Meiosis is Important</h2>
+      <p>Meiosis creates genetic diversity, which is crucial for evolution and adaptation. It ensures offspring are not identical to parents and allows for the proper number of chromosomes in gametes.</p>
+    </section>
+  </main>
+  
+  <footer>
+    &copy; 2026 Meiosis PWA
+  </footer>
+
+  <script>
+    // Register Service Worker for PWA offline support
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('Service Worker registered', reg))
+        .catch(err => console.log('Service Worker failed:', err));
+    }
+  </script>
+</body>
+</html>
